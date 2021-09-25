@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cam_safe_nav"
+    app:startDestination="@id/welcomeScreenFragment2">
+
+    <fragment
+        android:id="@+id/welcomeScreenFragment2"
+        android:name="com.example.safecam.WelcomeScreenFragment"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.safecam.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/camRecording"
+        android:name="com.example.safecam.CamRecording"
+        android:label="fragment_cam_recording_list"
+        tools:layout="@layout/fragment_cam_recording_list" />
+    <fragment
+        android:id="@+id/emergencyContactList"
+        android:name="com.example.safecam.EmergencyContactList"
+        android:label="fragment_emergency_contact_list_list"
+        tools:layout="@layout/fragment_emergency_contact_list_list" />
+</navigation>
